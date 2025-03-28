@@ -3,11 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>User Profile Test</title>
+  <style>
+    .output {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+    .user-card {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .user-info h2 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .badge.active {
+      display: inline-block;
+      background-color: #28a745;
+      color: #fff;
+      padding: 2px 6px;
+      margin-top: 5px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
   <h1>User Profile Test</h1>
-  
-  <!-- Include your userProfile.js file -->
+  <div id="processedUsers" class="output"></div>
+  <div id="userPosts" class="output"></div>
+  <div id="userProfile" class="output"></div>
+  <div id="stateOutput" class="output"></div>
   <script src="userProfile.js"></script>
 </body>
 </html>
